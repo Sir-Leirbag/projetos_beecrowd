@@ -5,7 +5,7 @@ def calcular_novo_salario(salario, percentual_decimal):
 def calcular_reajuste(salario, percentual_decimal):
     return (salario * percentual_decimal)
 
-def exibir_mensagem(salario, percentual_decimal, percentual):
+def exibir_mensagem(percentual_decimal, percentual):
     print(f'Novo salário: R$ {calcular_novo_salario(salario_atual, percentual_decimal):.2f}')
     print(f'Reajuste ganho: R$ {calcular_reajuste(salario_atual, percentual_decimal):.2f}')
     print(f'Em percentual: {percentual}%')
