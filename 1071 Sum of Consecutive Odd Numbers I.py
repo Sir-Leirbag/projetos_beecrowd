@@ -1,13 +1,16 @@
 #Leia dois valores inteiros X e Y. Imprima a soma de todos os valores ímpares entre eles.
 
 sequencia = []
+impares = []
 
 numero1 = int(input('Digite um número: '))
 numero2 = int(input('Digite outro número: '))
 
-for i in range (numero1, numero2 +1):
-    print(i)
-#    if numero % 2 != 0:
-#        sequencia.append(numero)
-#
-#print(len(sequencia))
+sequencia.append(numero1)
+sequencia.append(numero2)
+
+for i in range (min(sequencia) + 1, max(sequencia)):
+    if i % 2 != 0:
+        impares.append(i)
+
+print(f'A soma dos números ímpares é: {sum(impares)}')
